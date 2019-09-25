@@ -50,7 +50,7 @@ export default {
       baseurl: process.env.VUE_APP_BASEURL,
       show: false,
       phone: "13145205201",
-      pdfSrc: '../../public/33.pdf',
+      pdfSrc: '../../public/JavaScript高级程序设计（第3版）非扫描版.pdf',
       updataFileShow: false,
       axiosShow:false
     }
