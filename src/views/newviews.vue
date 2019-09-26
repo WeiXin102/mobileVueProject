@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- change -->
     <div class="content">
       <div class="item">采用postcss-pxtorem自适应(默认750设计图)</div>
       <div class="item">VUE_APP_BASEURL={{baseurl}}</div>
