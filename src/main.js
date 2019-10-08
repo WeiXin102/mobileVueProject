@@ -22,12 +22,13 @@ Vue.prototype.$echarts = echarts
 import api from './until/axios.js'
 Vue.prototype.$http = api
 
-import { Uploader, Toast, Dialog, Pagination, NavBar } from 'vant'
+import { Uploader, Toast, Dialog, Pagination, NavBar ,PullRefresh } from 'vant'
 Vue.use(Uploader)
   .use(Toast)
   .use(Dialog)
   .use(Pagination)
   .use(NavBar)
+  .use(PullRefresh)
 
 import time from './assets/common/time'
 Vue.filter('timeDate', time)

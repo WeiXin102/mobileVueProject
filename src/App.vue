@@ -23,6 +23,9 @@ export default {
 };
 </script>
 <style lang="less">
+body * {
+    outline: 1px solid yellow;
+}
 body{
   background-color: #171722;
   // background-color: #eeeeee;
