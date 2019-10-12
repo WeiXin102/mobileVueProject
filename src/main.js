@@ -22,7 +22,7 @@ Vue.prototype.$echarts = echarts
 import api from './until/axios.js'
 Vue.prototype.$http = api
 
-import { Uploader, Toast, Dialog, Pagination, NavBar ,PullRefresh } from 'vant'
+import { Uploader, Toast, Dialog, Pagination, NavBar, PullRefresh } from 'vant'
 Vue.use(Uploader)
   .use(Toast)
   .use(Dialog)
@@ -49,6 +49,10 @@ pxtorem()
 // document.getElementsByTagName("html")[0].style.fontSize = 100 * window.screen.width / 414 + 'px';
 
 Vue.config.productionTip = false
+
+
+
+
 
 new Vue({
   router,

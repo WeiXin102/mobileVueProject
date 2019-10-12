@@ -44,32 +44,43 @@
           <div>* - url地址对象建议使用单独的js文件管理</div>
         </van-dialog>
       </div>
+      <renderPulg>
+        <button>6666</button>
+      </renderPulg>
+      <renderPulg>
+        <button>6666</button>
+      </renderPulg>
+      <renderPulg>
+        <button>6666</button>
+      </renderPulg>
     </van-pull-refresh>
   </div>
 </template>
 
 <script>
-import phoneDialog from '@/components/phoneDialog.vue'
-import pdf from '@/components/pdf.vue'
-import pdfPagination from '@/components/pdfPagination.vue'
-import updataFile from '@/components/updataFile.vue'
+import phoneDialog from "@/components/phoneDialog.vue";
+import pdf from "@/components/pdf.vue";
+import pdfPagination from "@/components/pdfPagination.vue";
+import updataFile from "@/components/updataFile.vue";
+import renderPulg from "@/components/render";
 export default {
   data() {
     return {
       baseurl: process.env.VUE_APP_BASEURL,
       show: false,
       phone: "13145205201",
-      pdfSrc: '../../public/test.pdf',
+      pdfSrc: "../../public/test.pdf",
       updataFileShow: false,
       axiosShow: false,
       pullshow: true
-    }
+    };
   },
   components: {
     phoneDialog,
     pdf,
     updataFile,
-    pdfPagination
+    pdfPagination,
+    renderPulg
   },
   methods: {
     callback() {
@@ -78,7 +89,7 @@ export default {
     },
     gain(value) {
       //点击验证按钮的回调函数  参数1：value  输入的验证码验证码
-      alert('这是验证码回调value：' + value);
+      alert("这是验证码回调value：" + value);
     },
 
     onRefresh() {
@@ -92,12 +103,11 @@ export default {
         query: params,
         params: { pdfSrc: this.pdfSrc }
       });
-      window.open(routeData.href, '_blank');
+      window.open(routeData.href, "_blank");
     }
   },
-  mounted() {
-  }
-}
+  mounted() {}
+};
 </script>
 
 <style lang='scss' scoped>
